@@ -1,0 +1,55 @@
+\documentclass[oneside]{ausarbeitung}
+\bibliography{literature}
+
+
+% ----------------------------------------------------------------------
+
+\begin{document}
+\selectlanguage{ngerman}
+
+%--- Deckblatt Infos
+%--- Art der Arbeit (Deckblatt Kopfzeile)
+\setDoctype{Art}
+%--- Studiengang:
+\setDepname{Studiengang}
+%--- Titel
+\title{Titel}
+
+\author{Name}
+\matrikelnr{MatNr}
+\date{Datum} % \today
+\location{Ort}
+
+%--- Titelseite Anzeigen
+\maketitle
+\cleardoublepage
+
+%---
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\cleardoublepage
+
+%-----------------------------------------------------------------------
+\cleardoublepage
+\tableofcontents
+
+%---
+
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%----------------------------------------------------------------------
+%--- Eidesstattliche Erklärung anzeigen
+\makeaffirmation
+
+%--- Tatsächlicher Inhalt
+\input{content.tex}
+
+%-----------------------------------------------------------------------
+%--- Quellenverzeichnis
+\printbibliography[heading=bibintoc]
+
+%---
+\end{document}
